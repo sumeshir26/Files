@@ -792,6 +792,8 @@ namespace Files.ViewModels
         public ICommand Share { get; set; }
 
         public ICommand CutCommand { get; set; }
+        
+        public ICommand OpenPropertiesCommand { get; set; }  
 
         public ICommand EmptyRecycleBinCommand { get; set; }
 
