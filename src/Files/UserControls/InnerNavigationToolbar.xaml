@@ -169,11 +169,11 @@
                     x:Name="PropertiesButton"
                     Width="Auto"
                     MinWidth="40"
-                    Command="{x:Bind ViewModel.DeleteCommand, Mode=OneWay}"
+                    Command="{x:Bind ViewModel.OpenPropertiesCommand, Mode=OneWay}"
                     IsEnabled="{x:Bind converters:MultiBooleanConverter.AndConvert(ViewModel.CanCopy, ViewModel.InstanceViewModel.IsPageTypeNotHome), Mode=OneWay, FallbackValue=False}"
-                    Label="{helpers:ResourceString Name=Delete}"
+                    Label="{x:Bind GetLocalizedString('BaseLayoutItemContextFlyoutProperties/Text')}"
                     LabelPosition="Collapsed"
-                    ToolTipService.ToolTip="{helpers:ResourceString Name=Delete}">
+                    ToolTipService.ToolTip="{x:Bind GetLocalizedString('BaseLayoutItemContextFlyoutProperties/Text')}">
                     <AppBarButton.Content>
                         <local:ColoredIcon BaseLayerGlyph="&#xE946;" OverlayLayerGlyph="&#xF946;" />
                     </AppBarButton.Content>
